@@ -1,0 +1,13 @@
+.rignt-contents {
+    padding-top: 5px;
+}
+
+ #toolbar .dx-toolbar-item {
+    /* vertical-align: bottom; */
+} 
+
+#toolbar {
+    /* background-color: rgba(191, 191, 191, 0.15); */
+    /* box-shadow: -5px 1px 14px 0px rgba(0, 0, 0, 0.15) inset;
+   height: 45px; */
+}
