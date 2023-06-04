@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import Drawer from 'devextreme-react/drawer';
 import { Toolbar, Item } from 'devextreme-react/toolbar';
 import HTMLReactParser from 'html-react-parser';
 import Menu  from '../menu/menu.js';
 import './frame.css';
 
-export default function Frame() {
+function Frame() {
 
   const [opened, setOened] = useState(true);
   const [openedStateMode, setOpenedStateMode] = useState('shrink');
@@ -27,7 +27,7 @@ export default function Frame() {
   // function onOutsideClick() {}
 
   return (
-    <React.Fragment>
+    <Fragment>
       <Toolbar id='toolbar' >
         <Item 
           widget='dxButton'
@@ -93,7 +93,8 @@ export default function Frame() {
             {HTMLReactParser("안녕하세요")}
           </div>
       </Drawer>
-  </React.Fragment>
+  </Fragment>
   );
 }
 
+export default Frame;
